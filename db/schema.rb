@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_06_05_123005) do
+ActiveRecord::Schema.define(version: 2023_06_06_111509) do
+
+  create_table "authors", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.integer "book_id"
+    t.integer "user_id"
+    t.index ["book_id"], name: "index_authors_on_book_id"
+    t.index ["user_id"], name: "index_authors_on_user_id"
+  end
 
   create_table "books", force: :cascade do |t|
     t.string "title"
@@ -21,4 +30,14 @@ ActiveRecord::Schema.define(version: 2023_06_05_123005) do
     t.string "author"
   end
 
+  create_table "user", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.integer "book_id"
+    t.index ["book_id"], name: "index_user_on_book_id"
+  end
+
+  add_foreign_key "authors", "books"
+  add_foreign_key "authors", "users"
+  add_foreign_key "user", "books"
 end
