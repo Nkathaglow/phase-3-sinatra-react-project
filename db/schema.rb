@@ -30,14 +30,16 @@ ActiveRecord::Schema.define(version: 2023_06_06_111509) do
     t.string "author"
   end
 
-  create_table "user", force: :cascade do |t|
-    t.string "name"
+  create_table "users", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
     t.string "email"
+    t.string "password"
     t.integer "book_id"
-    t.index ["book_id"], name: "index_user_on_book_id"
+    t.index ["book_id"], name: "index_users_on_book_id"
   end
 
   add_foreign_key "authors", "books"
   add_foreign_key "authors", "users"
-  add_foreign_key "user", "books"
+  add_foreign_key "users", "books"
 end
