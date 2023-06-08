@@ -3,7 +3,7 @@
 ### Author : Muriungi Glory Nkatha 7/06/2023
 ****
 ## Project Description
-This is the backend for the ## World of Books application that I have designed to store the data and manage my application database that revolves alround by allowing the user to sign in to the specific app sending data to the database.It has many cards for display fetching data from the database.It also makes it easier for the user to search for data through the API making the range for the search easier and time-efficient.One is also able to update and delete data from the given books according to the user needs.
+This is the backend for the # World of Books application that I have designed to store the data and manage my application database that revolves alround by allowing the user to sign in to the specific app sending data to the database.It has many cards for display fetching data from the database.It also makes it easier for the user to search for data through the API making the range for the search easier and time-efficient.One is also able to update and delete data from the given books according to the user needs.
 ******
 
 ## SCREENSHOTS
@@ -30,7 +30,8 @@ This is the backend for the ## World of Books application that I have designed t
 2. Open your web browser and visit: `http://localhost:3000`
 
 ## Live Link
-Or you can access the web application directly via this [LINK.](link.com/)
+Or you can access the web application directly via this [LINK.]
+You can access the front-end directly via[https://sin-front2-git-main-nkathaglow.vercel.app/]
 *****
 ## Dependencies
 - Google
